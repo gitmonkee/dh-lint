@@ -31,6 +31,8 @@ you will then be prompted to answer a series of questions in order to set up the
 
 The config files generated in your projects root directory both extend framework specific config files defined in this package. The generated files can be extended and overridden further by defining your own settings within them. For documentation on how to add your own rules or settings, click on the links listed under the **Dependencies** section of this README file.
 
+The base eslint config file in this package extends from the [eslint-config-airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
+
 ---
 ## Usage
 
