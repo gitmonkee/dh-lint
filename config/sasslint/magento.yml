@@ -1,0 +1,6 @@
+---
+options:
+  config-file: "./common.yml"
+files:
+  include: 'app/design/frontend/**/*.s+(a|c)ss'
+  ignore: 'vendor/**'
