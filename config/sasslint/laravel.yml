@@ -1,0 +1,5 @@
+options:
+  config-file: "./common.yml"
+files:
+  include: 'resources/assets/sass/**/*.s+(a|c)ss'
+  ignore: 'vendor/**'

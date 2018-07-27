@@ -1,0 +1,35 @@
+{
+  "name": "dh-lint",
+  "description": "Build tasks for doghouse agency",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "lint:sass": "sass-lint -c .sass-lint.yml -v -q",
+    "lint:sass-fix": "sass-lint-auto-fix -c .sass-lint.yml",
+    "lint:js": "eslint --color %PATH%",
+    "lint:js-fix": "eslint --fix --color --fix %PATH%"
+  },
+  "bin": {
+    "dh-lint-install": "./bin/install.js"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "chokidar": "1.6.1",
+    "cross-env": "^4.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "14.1.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "4.0.0",
+    "eslint-plugin-react": "6.10.3",
+    "glob": "7.1.1",
+    "inquirer": "^6.0.0",
+    "json2yaml": "^1.1.0",
+    "minimist": "^1.2.0",
+    "sass-lint": "^1.12.1",
+    "sass-lint-auto-fix": "^0.11.1",
+    "stylelint": "^7.10.1",
+    "stylelint-checkstyle-formatter": "^0.1.0",
+    "stylelint-config-standard": "^16.0.0",
+    "stylelint-no-browser-hacks": "^1.0.2"
+  }
+}

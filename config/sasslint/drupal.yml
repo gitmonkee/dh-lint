@@ -1,0 +1,5 @@
+options:
+  config-file: "./common.yml"
+files:
+  include: 'docroot/themes/custom/**/*.s+(a|c)ss'
+  ignore: 'vendor/**'

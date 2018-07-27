@@ -1,0 +1,5 @@
+---
+extends: "./common.yml"
+globals:
+  Vue: true
+  jQuery: true
