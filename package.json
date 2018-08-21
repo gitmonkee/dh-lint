@@ -3,12 +3,6 @@
   "description": "Build tasks for doghouse agency",
   "private": true,
   "version": "0.0.1",
-  "scripts": {
-    "lint:sass": "sass-lint -c .sass-lint.yml -v -q",
-    "lint:sass-fix": "sass-lint-auto-fix -c .sass-lint.yml",
-    "lint:js": "eslint --color %PATH%",
-    "lint:js-fix": "eslint --fix --color --fix %PATH%"
-  },
   "bin": {
     "dh-lint-install": "./bin/install.js"
   },
@@ -21,6 +15,7 @@
     "eslint-plugin-import": "2.2.0",
     "eslint-plugin-jsx-a11y": "4.0.0",
     "eslint-plugin-react": "6.10.3",
+    "eslint-plugin-vue": "^4.7.1",
     "glob": "7.1.1",
     "inquirer": "^6.0.0",
     "json2yaml": "^1.1.0",

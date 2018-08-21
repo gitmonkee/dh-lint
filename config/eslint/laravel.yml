@@ -1,5 +1,7 @@
 ---
-extends: "./common.yml"
+extends:
+- "./common.yml"
+- plugin:vue/recommended
 globals:
   Vue: true
   jQuery: true

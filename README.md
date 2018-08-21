@@ -50,3 +50,15 @@ If you opted to update your package.json file with linting scripts, then you may
 ## Dependencies
 
 This project depends on [eslint](https://github.com/eslint/eslint) for javascript linting and [sass-lint](https://github.com/sasstools/sass-lint) for sass linting.
+
+---
+
+## Support
+
+Currently supported frameworks are:
+
+1. Drupal 8
+2. Magento 2
+3. Laravel 5
+
+If you wish to add support for Drupal 7, Magento 1 or any other framework, please email or slack Carl Bradshaw. Otherwise feel free to create a pull request.

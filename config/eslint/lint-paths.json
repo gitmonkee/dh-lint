@@ -1,0 +1,5 @@
+{
+  "drupal": "docroot/themes/custom docroot/modules/custom",
+  "laravel": "app/modules resources/assets/js",
+  "magento": ""
+}

@@ -1,6 +1,17 @@
+# https://devdocs.magento.com/guides/v2.2/coding-standards/code-standard-less.html
 ---
 options:
   config-file: "./common.yml"
 files:
   include: 'app/design/frontend/**/*.s+(a|c)ss'
   ignore: 'vendor/**'
+rules:
+  indentation:
+    - 2
+    -
+      size: 4
+  quotes: 2
+  space-before-colon: 2
+  no-important: 1
+  zero-unit: 2
+  leading-zero: 2

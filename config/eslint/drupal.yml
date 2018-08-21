@@ -1,5 +1,10 @@
+# https://cgit.drupalcode.org/drupal/tree/core/.eslintrc.json?h=8.5.x
 ---
 extends: "./common.yml"
+env:
+  browser: true
+  es6: true
+  node: true
 globals:
   Drupal: true
   drupalSettings: true
