@@ -10,7 +10,7 @@ You can get `dh-lint` from [stash](http://stash.dhmedia.com.au/projects/DB/repos
 
 To save to a project as a dev dependency, run:
 ```
-npm install git+ssh://git@bitbucket.org:doghouseagency/dh-drupal-lint.git --save-dev
+npm install git+ssh://git@bitbucket.org:doghouseagency/dh-lint.git --save-dev
 ```
 
 ---
