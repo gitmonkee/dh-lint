@@ -2,6 +2,12 @@
 extends:
 - "./common.yml"
 - plugin:vue/recommended
+# Parser provides support for dynamic imports on .js and .vue components.
+parser: 'vue-eslint-parser'
+parserOptions:
+  parser: "babel-eslint"
+  sourceType: 'module'
+  allowImportExportEverywhere: true
 globals:
   Vue: true
   jQuery: true
