@@ -42,6 +42,8 @@ If you opted to update your package.json file with linting scripts, then you may
 2. `npm run lint:js-fix` Will attempt to fix any errors that eslint has found with your code.
 3. `npm run lint:sass` Will scan your styles directory and log any errors or warnings associated with your stylesheets.
 4. `npm run lint:sass-fix` Will attempt to fix any errors that sass-lint has found within your stylesheets.
+5. `npm run lint:vue` Will scan your directory containing vue elements and log any errors or warnings associated with your vue components.
+6. `npm run lint:vue-fix` Will attempt to fix any errors that eslint has found within your vue components.
 
 **Note**: If you choose to have your errors automatically fixed, **you are still responsible for this code**, So please review the changes made before you commit them.
 
