@@ -1,8 +1,12 @@
 {
-  "name": "dh-lint",
-  "description": "Build tasks for doghouse agency",
+  "name": "@doghouse/dh-lint",
   "private": true,
-  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitmonkee/dh-lint"
+  },
+  "author": "Doghouse Digital Agency (https://doghouse.agency)",
+  "license": "BSD-3-Clause",
   "bin": {
     "dh-lint-install": "./bin/install.js"
   },

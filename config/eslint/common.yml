@@ -1,6 +1,6 @@
 ---
 extends: 'eslint-config-airbnb'
-root: 1
+root: true
 env:
   browser: 1
   jquery: 1
