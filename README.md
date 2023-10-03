@@ -20,7 +20,7 @@ npm install git+ssh://git@bitbucket.org:doghouseagency/dh-lint.git --save-dev
 DH Lint can be configured via the command line by running the following command in your project root:
 
 ```bash
-node node_modules/dh-lint/bin/install.js
+node node_modules/@doghouse/dh-lint/bin/install.js
 ```
 you will then be prompted to answer a series of questions in order to set up the config files for your project:
 
