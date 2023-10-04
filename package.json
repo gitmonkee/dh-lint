@@ -8,10 +8,11 @@
   "author": "Doghouse Digital Agency (https://doghouse.agency)",
   "license": "BSD-3-Clause",
   "bin": {
-    "dh-lint-install": "./bin/install.js"
+    "dh-lint": "./bin/install.js"
   },
   "dependencies": {
     "@babel/core": "^7.23.0",
+    "@babel/eslint-parser": "^7.22.15",
     "@babel/preset-env": "^7.22.20",
     "chalk": "^1.1.3",
     "chokidar": "1.6.1",
