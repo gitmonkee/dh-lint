@@ -1,14 +1,26 @@
 {
   "name": "@doghouse/dh-lint",
-  "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gitmonkee/dh-lint"
+    "url": "git+https://github.com/gitmonkee/dh-lint.git"
   },
   "author": "Doghouse Digital Agency (https://doghouse.agency)",
   "license": "BSD-3-Clause",
+  "description": "DH Lint is a tool for generating project specific javascript and sass linting configuration files.",
+  "bugs": {
+    "url": "https://github.com/gitmonkee/dh-lint/issues"
+  },
+  "homepage": "https://github.com/gitmonkee/dh-lint#readme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "bin": {
-    "dh-lint": "./bin/install.js"
+    "dh-lint": "node bin/install.js"
   },
   "dependencies": {
     "@babel/core": "^7.23.0",
