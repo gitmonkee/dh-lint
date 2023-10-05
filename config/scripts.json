@@ -4,5 +4,7 @@
   "lint:js": "eslint --color %PATH%",
   "lint:js-fix": "eslint --color --fix %PATH%",
   "lint:vue": "eslint --ext .vue %PATH%",
-  "lint:vue-fix": "eslint --fix --ext .vue %PATH%"
+  "lint:vue-fix": "eslint --fix --ext .vue %PATH%",
+  "lint": "npm run lint:sass; npm run lint:js; npm run lint:vue",
+  "lint-fix": "npm run lint:sass-fix; npm run lint:js-fix; npm run lint:vue-fix"
 }

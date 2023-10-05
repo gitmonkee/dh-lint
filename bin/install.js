@@ -9,6 +9,7 @@ const fs = require('fs');
 const path = require('path');
 const generateEslintRc = require("../lib/generateEslintConfig");
 const generateSasslintRc = require("../lib/generateSasslintConfig");
+const generateBabelConfigRc = require("../lib/generateBabelConfig");
 const updatePackageJsonScripts = require("../lib/updatePackageJsonScripts");
 const appRoot = path.resolve('./');
 
@@ -30,6 +31,12 @@ function sasslintFileExists() {
   return fs.existsSync(appRoot + '/.sass-lint.yml');
 }
 
+/**
+ * Determine if a babel.config.js file exists in the project.
+ */
+function babelConfigFileExists() {
+  return fs.existsSync(appRoot + '/babel.config.js');
+}
 //------------------------------------------------------------------------------
 // Initialization and Public Interface
 //------------------------------------------------------------------------------
@@ -79,11 +86,26 @@ inquirer.prompt([
   },
   {
     type: "confirm",
+    name: "genBabelConfig",
+    message: "Would you like to generate a babel config file?",
+    default: true
+  },
+  {
+    type: "confirm",
+    name: 'replaceBabelConfig',
+    default: true,
+    message: 'A babel.config.js already exists, would you like to replace it?',
+    when: function(answers) {
+      return answers.genBabelConfig && babelConfigFileExists();
+    }
+  },
+  {
+    type: "confirm",
     name: "updateNpmScripts",
     message: "Would you like to update your package.json file with linting scripts?",
     default: true
   }
-]).then( ({framework, genEslintRc, replaceEslintrc, genSasslint, replaceSasslint, updateNpmScripts}) => {
+]).then( ({framework, genEslintRc, replaceEslintrc, genSasslint, replaceSasslint, genBabelConfig, replaceBabelConfig, updateNpmScripts}) => {
   if (typeof replaceEslintrc === 'undefined') {
     replaceEslintrc = true;
   }
@@ -92,12 +114,20 @@ inquirer.prompt([
     replaceSasslint = true;
   }
 
+  if (typeof replaceBabelConfig === 'undefined') {
+    replaceBabelConfig = true;
+  }
+
   if (genEslintRc && replaceEslintrc) {
     generateEslintRc(framework);
   }
 
   if (genSasslint && replaceSasslint) {
     generateSasslintRc(framework);
+  }
+
+  if (genBabelConfig && replaceBabelConfig) {
+    generateBabelConfigRc();
   }
 
   if (updateNpmScripts) {
